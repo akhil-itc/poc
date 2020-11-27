@@ -1,0 +1,15 @@
+(0.000) EXPLAIN QUERY PLAN SELECT "library_book"."id", "library_book"."title", "library_book"."description", "library_book"."count", "library_book"."subscription_cost", "library_book"."topic", "library_book"."author_id" FROM "library_book"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) SELECT "library_author"."id", "library_author"."name", "library_author"."address" FROM "library_author"; args=()
+(0.000) SELECT "library_book"."id", "library_book"."title", "library_book"."description", "library_book"."count", "library_book"."subscription_cost", "library_book"."topic", "library_book"."author_id" FROM "library_book"; args=()
+(0.000) SELECT "library_author"."id", "library_author"."name", "library_author"."address" FROM "library_author" LIMIT 1000; args=()
+(0.016) SELECT AVG("library_book"."subscription_cost") AS "subs_cost_avg" FROM "library_book"; args=()
+(0.000) SELECT MAX("library_book"."subscription_cost") AS "max_cost" FROM "library_book"; args=()
+(0.000) SELECT "library_subscriber"."id", "library_subscriber"."user_id", "library_subscriber"."address", "library_subscriber"."phone" FROM "library_subscriber"; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 1000; args=()
+(0.000) SELECT "library_book"."id", "library_book"."title", "library_book"."description", "library_book"."count", "library_book"."subscription_cost", "library_book"."topic", "library_book"."author_id" FROM "library_book" LIMIT 21; args=()
+(0.000) EXPLAIN QUERY PLAN SELECT "library_book"."id", "library_book"."title", "library_book"."description", "library_book"."count", "library_book"."subscription_cost", "library_book"."topic", "library_book"."author_id" FROM "library_book"; args=()
